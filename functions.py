@@ -129,20 +129,16 @@ product(4, 0.5, 5)
 
 # Write a function named steps_to_zero that accepts a non-negative integer as an argument, and returns the number of steps it took to reduce the integer to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
 # INCORRECT!!!!!!!!
-# def steps_to_zero(num):
-#   print('sanity')
-#   steps = 0
-#   curr_num = num
-#   while curr_num != 0:
-#     if curr_num % 2 == 0:
-#       print('even')
-#       print(curr_num)
-#       curr_num = num // 2
-#       steps += 1
-#     else:
-#       print('odd')
-#       curr_num -= 1
-#       steps +=1
-#   print(steps)
+def steps_to_zero(num):
+  steps = 0
+  curr_num = num
+  while curr_num != 0:
+    if curr_num % 2 == 0:
+      curr_num = curr_num // 2
+      steps += 1
+    else:
+      curr_num = curr_num - 1
+      steps +=1
+  print(steps)
 
-# steps_to_zero(14)
+steps_to_zero(14)
