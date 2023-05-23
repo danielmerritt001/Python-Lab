@@ -1,3 +1,7 @@
+
+#---------- LAB BEGINS AT LINE 82 ----------#
+
+
 #Python functions
 
 # def first_function():
@@ -78,50 +82,50 @@
 # ---------- Python Functions Lab ----------
 
 # Write a function named sum_to that accepts a single integer, n, and returns the sum of the integers from 1 to n.
-# def sum_to(n):
-#   answer = 0
-#   for num in range(n+1):
-#     answer += num
-#   return answer
+def sum_to(n):
+  answer = 0
+  for num in range(n+1):
+    answer += num
+  return answer
 
-# print(sum_to(4))
+print(sum_to(4))
 
 # Write a function named largest that takes a list of numbers as an argument and returns the largest number in that list.
-# def largest(list):
-#   high_num=0
-#   for number in list:
-#     if number > high_num:
-#       high_num = number
-#   print(high_num)
+def largest(list):
+  high_num=0
+  for number in list:
+    if number > high_num:
+      high_num = number
+  print(high_num)
 
-# largest([1, 2, 3, 4, 0])
-# largest([10, 4, 2, 231, 91, 54])
+largest([1, 2, 3, 4, 0])
+largest([10, 4, 2, 231, 91, 54])
 
 # Write a function named occurrences that takes two string arguments as input and counts the number of occurrences of the second string inside the first string.
-# def occurrences(str1, str2):
-#   occurrence = 0
-#   for num in range(len(str1)-len(str2)+1):
-#     if str1[num:num+len(str2)] == str2:
-#       occurrence += 1
-#   print(occurrence)
+def occurrences(str1, str2):
+  occurrence = 0
+  for num in range(len(str1)-len(str2)+1):
+    if str1[num:num+len(str2)] == str2:
+      occurrence += 1
+  print(occurrence)
 
-# occurrences('fleep floop', 'e')   
-# occurrences('fleep floop', 'p')   
-# occurrences('fleep floop', 'ee')  
-# occurrences('fleep floop', 'fe')
+occurrences('fleep floop', 'e')   
+occurrences('fleep floop', 'p')   
+occurrences('fleep floop', 'ee')  
+occurrences('fleep floop', 'fe')
 
 #Write a function named product that takes an arbitrary number of numbers, multiplies them all together, and returns the product.
 #(HINT: Review your notes on *args).
 
-# def product(*args):
-#   product = 1
-#   for arg in args:
-#     product = product * arg
-#   print(product)
+def product(*args):
+  product = 1
+  for arg in args:
+    product = product * arg
+  print(product)
 
-# product(-1, 4) 
-# product(2, 5, 5) 
-# product(4, 0.5, 5)
+product(-1, 4) 
+product(2, 5, 5) 
+product(4, 0.5, 5)
 
 # Write a function named steps_to_zero that accepts a non-negative integer as an argument, and returns the number of steps it took to reduce the integer to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
 # INCORRECT!!!!!!!!
